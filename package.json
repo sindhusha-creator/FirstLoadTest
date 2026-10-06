@@ -1,0 +1,19 @@
+{
+  "name": "firstloadtest",
+  "version": "1.0.0",
+  "description": "Load testing project using k6",
+  "main": "index.js",
+  "scripts": {
+    "test": "k6 run scripts/load-test.js",
+    "test:staging": "k6 run scripts/load-test.js --vus 10 --duration 30s",
+    "test:production": "k6 run scripts/load-test.js --vus 50 --duration 60s"
+  },
+  "keywords": [
+    "load-testing",
+    "k6",
+    "performance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}
