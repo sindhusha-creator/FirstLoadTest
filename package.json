@@ -6,7 +6,11 @@
   "scripts": {
     "test": "k6 run scripts/load-test.js",
     "test:staging": "k6 run scripts/load-test.js --vus 10 --duration 30s",
-    "test:production": "k6 run scripts/load-test.js --vus 50 --duration 60s"
+    "test:production": "k6 run scripts/load-test.js --vus 50 --duration 60s",
+    "test:http-methods": "k6 run scripts/http-methods-test.js",
+    "test:http-methods:vus": "k6 run scripts/http-methods-test.js --vus 5 --iterations 5",
+    "test:status-codes": "k6 run scripts/status-codes-advanced.js",
+    "test:status-codes:verbose": "k6 run scripts/status-codes-advanced.js -v"
   },
   "keywords": [
     "load-testing",
